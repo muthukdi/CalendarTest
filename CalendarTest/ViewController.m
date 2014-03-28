@@ -141,7 +141,7 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(94.0, 94.0);
+    return CGSizeMake(88.0, 88.0);
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
@@ -158,14 +158,29 @@
     return self.tableData.count;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Height of the table cell background image
+    return 140;
+}
+
 
 -(UITableViewCell*) tableView:(UITableView*) tableView cellForRowAtIndexPath:(NSIndexPath*) indexPath
 {
-    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"DequeueReusableCell"
-                                                            forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
+        cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+    }
     NSInteger row = indexPath.row;
     
     cell.textLabel.text = [self.tableData objectAtIndex:row];
+    cell.textLabel.font = [UIFont fontWithName:@"Arial-BoldMT" size:15];
+    cell.textLabel.numberOfLines = 5;
+    [cell.textLabel sizeToFit];
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tablecell.png"]];
+    cell.showsReorderControl = YES;
     
     return cell;
 }

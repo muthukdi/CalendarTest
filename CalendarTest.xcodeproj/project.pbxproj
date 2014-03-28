@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6449F2FB18E51E060027B804 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6449F2F918E51E060027B804 /* background.jpg */; };
+		6449F2FC18E51E060027B804 /* tablecell.png in Resources */ = {isa = PBXBuildFile; fileRef = 6449F2FA18E51E060027B804 /* tablecell.png */; };
 		6450D4E818E0AE4C0076CB56 /* I3DragBetweenHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450D4E718E0AE4C0076CB56 /* I3DragBetweenHelper.m */; };
 		6450D4EA18E0BBE10076CB56 /* sevendays.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6450D4E918E0BBE10076CB56 /* sevendays.gif */; };
 		6450D4ED18E0CFDA0076CB56 /* CalendarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6450D4EC18E0CFDA0076CB56 /* CalendarItem.m */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6449F2F918E51E060027B804 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		6449F2FA18E51E060027B804 /* tablecell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tablecell.png; sourceTree = "<group>"; };
 		6450D4E618E0AE4C0076CB56 /* I3DragBetweenHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = I3DragBetweenHelper.h; sourceTree = "<group>"; };
 		6450D4E718E0AE4C0076CB56 /* I3DragBetweenHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = I3DragBetweenHelper.m; sourceTree = "<group>"; };
 		6450D4E918E0BBE10076CB56 /* sevendays.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sevendays.gif; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				6450D4EB18E0CFDA0076CB56 /* CalendarItem.h */,
 				6450D4EC18E0CFDA0076CB56 /* CalendarItem.m */,
 				6450D4E918E0BBE10076CB56 /* sevendays.gif */,
+				6449F2F918E51E060027B804 /* background.jpg */,
+				6449F2FA18E51E060027B804 /* tablecell.png */,
 				648076C718DFB9D70007B556 /* Images.xcassets */,
 				648076B618DFB9D70007B556 /* Supporting Files */,
 			);
@@ -247,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				648076C818DFB9D70007B556 /* Images.xcassets in Resources */,
+				6449F2FB18E51E060027B804 /* background.jpg in Resources */,
 				648076BA18DFB9D70007B556 /* InfoPlist.strings in Resources */,
 				6450D4EA18E0BBE10076CB56 /* sevendays.gif in Resources */,
+				6449F2FC18E51E060027B804 /* tablecell.png in Resources */,
 				648076C318DFB9D70007B556 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

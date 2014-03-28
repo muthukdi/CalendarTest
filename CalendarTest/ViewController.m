@@ -73,7 +73,11 @@
     /* Grab the appropriate data */
     NSInteger fromIndex = (from.item);
     NSInteger toIndex = (to.item);
-    
+    // Disable drag and drop on invalid calendar cells
+    if (toIndex < 5 || toIndex > 36)
+    {
+        return;
+    }
     // Don't allow more than 4 names in a calendar item
     CalendarItem *item = [self.collectionData objectAtIndex:toIndex];
     if (item.entries.count > 3)
@@ -117,13 +121,15 @@
     if ([date isEqualToString:@"0"])
     {
         cell.backgroundColor = [UIColor lightGrayColor];
+        cell.dateLabel.text = @"";
+        cell.entriesLabel.text = @"";
     }
     else
     {
         cell.dateLabel.text = date;
         cell.entriesLabel.text = [item.entries componentsJoinedByString:@"\n"];
         cell.entriesLabel.numberOfLines = 4;
-        cell.dateLabel.textColor = [UIColor blackColor];
+        cell.dateLabel.textColor = [UIColor blueColor];
         cell.entriesLabel.textColor = [UIColor blackColor];
         cell.backgroundColor = [UIColor whiteColor];
     }

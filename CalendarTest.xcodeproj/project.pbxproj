@@ -26,6 +26,7 @@
 		648076D118DFB9D70007B556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 648076B318DFB9D70007B556 /* UIKit.framework */; };
 		648076D918DFB9D70007B556 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 648076D718DFB9D70007B556 /* InfoPlist.strings */; };
 		648076DB18DFB9D70007B556 /* CalendarTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 648076DA18DFB9D70007B556 /* CalendarTestTests.m */; };
+		64D3F6B518E722AC004F9359 /* sidepanel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64D3F6B418E722AC004F9359 /* sidepanel.jpg */; };
 		64FE987218E12CF500326E14 /* DMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FE987118E12CF500326E14 /* DMCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		648076D618DFB9D70007B556 /* CalendarTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalendarTestTests-Info.plist"; sourceTree = "<group>"; };
 		648076D818DFB9D70007B556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		648076DA18DFB9D70007B556 /* CalendarTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarTestTests.m; sourceTree = "<group>"; };
+		64D3F6B418E722AC004F9359 /* sidepanel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sidepanel.jpg; sourceTree = "<group>"; };
 		64FE987018E12CF500326E14 /* DMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCollectionViewCell.h; sourceTree = "<group>"; };
 		64FE987118E12CF500326E14 /* DMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 				6450D4EB18E0CFDA0076CB56 /* CalendarItem.h */,
 				6450D4EC18E0CFDA0076CB56 /* CalendarItem.m */,
 				6450D4E918E0BBE10076CB56 /* sevendays.gif */,
+				64D3F6B418E722AC004F9359 /* sidepanel.jpg */,
 				6449F2F918E51E060027B804 /* background.jpg */,
 				6449F2FA18E51E060027B804 /* tablecell.png */,
 				648076C718DFB9D70007B556 /* Images.xcassets */,
@@ -254,6 +257,7 @@
 			files = (
 				648076C818DFB9D70007B556 /* Images.xcassets in Resources */,
 				6449F2FB18E51E060027B804 /* background.jpg in Resources */,
+				64D3F6B518E722AC004F9359 /* sidepanel.jpg in Resources */,
 				648076BA18DFB9D70007B556 /* InfoPlist.strings in Resources */,
 				6450D4EA18E0BBE10076CB56 /* sevendays.gif in Resources */,
 				6449F2FC18E51E060027B804 /* tablecell.png in Resources */,

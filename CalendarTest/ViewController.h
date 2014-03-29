@@ -26,4 +26,6 @@
 
 @property (nonatomic, strong) NSMutableArray* collectionData;
 
+-(IBAction)hideView:(id)sender;
+
 @end

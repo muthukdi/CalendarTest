@@ -17,6 +17,7 @@
     self.sourceTable.dataSource = self;
     self.destinationCollection.delegate = self;
     self.destinationCollection.dataSource = self;
+    self.destinationCollection.backgroundColor = [UIColor lightGrayColor];
     self.tableData = @[
                       @"Dilip",
                       @"Kshitij",
@@ -123,6 +124,7 @@
         cell.backgroundColor = [UIColor lightGrayColor];
         cell.dateLabel.text = @"";
         cell.entriesLabel.text = @"";
+        [cell.layer setBorderColor:[UIColor lightGrayColor].CGColor];
     }
     else
     {
@@ -132,6 +134,8 @@
         cell.dateLabel.textColor = [UIColor blueColor];
         cell.entriesLabel.textColor = [UIColor blackColor];
         cell.backgroundColor = [UIColor whiteColor];
+        [cell.layer setBorderColor:[UIColor blackColor].CGColor];
+        [cell.layer setBorderWidth:1.0f];
     }
     
     return cell;
@@ -183,6 +187,28 @@
     cell.showsReorderControl = YES;
     
     return cell;
+}
+
+#pragma mark - Slide the table view left or right to hide/unhide it
+
+-(IBAction)hideView:(id)sender
+{
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:.5];
+    [UIView setAnimationDelay:0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    
+    if (self.sourceTable.frame.origin.x == 115)
+    {
+        self.sourceTable.frame = CGRectMake(115-290, 211, 290, 556);
+    }
+    else
+    {
+        self.sourceTable.frame = CGRectMake(115, 211, 290, 556);
+    }
+    
+    [UIView commitAnimations];
 }
 
 

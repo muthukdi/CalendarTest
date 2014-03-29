@@ -103,7 +103,14 @@
 
 -(BOOL) isCellAtIndexPathDraggable:(NSIndexPath*) index inContainer:(UIView*) container
 {
-    return (container == self.destinationCollection) ? NO : YES;
+    if (!isTableViewVisible)
+    {
+        return NO;
+    }
+    else
+    {
+        return (container == self.destinationCollection) ? NO : YES;
+    }
 }
 
 
@@ -138,7 +145,6 @@
         [cell.layer setBorderColor:[UIColor blackColor].CGColor];
         [cell.layer setBorderWidth:1.0f];
     }
-    
     return cell;
 }
 
@@ -215,7 +221,7 @@
         self.locationsLabel.frame = CGRectMake(115-290, 168, 100, 21);
         self.monthLabel.frame = CGRectMake(456, 81, 162, 19);
         self.weekImage.frame = CGRectMake(115, 109, 909, 34);
-        //self.destinationCollection.frame = CGRectMake(115, 146, 909, 621);
+        self.destinationCollection.frame = CGRectMake(115, 146, 909, 621);
     }
     else
     {
@@ -225,10 +231,11 @@
         self.locationsTitleBar.frame = CGRectMake(115, 109, 290, 101);
         self.monthLabel.frame = CGRectMake(633, 134, 162, 19);
         self.weekImage.frame = CGRectMake(405, 202, 619, 34);
-        //self.destinationCollection.frame = CGRectMake(405, 237, 619, 531);
+        self.destinationCollection.frame = CGRectMake(405, 237, 619, 531);
     }
     
     [UIView commitAnimations];
+    [self.destinationCollection reloadData];
 }
 
 
